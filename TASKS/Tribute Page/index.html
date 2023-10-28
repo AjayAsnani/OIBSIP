@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute-Page</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="font1">SHAH RUKH KHAN</div>
+      <div class="font">2 November 1965</div>
+    </div>
+    <div class="video">
+      <video width="800" height="500" controls poster="./images/srk.jpg">
+        >
+        <source src="./srk.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="font1">ABOUT</div>
+    <div class="para">
+      <p>
+        Shah Rukh Khan, also known as the "Badshah of Bollywood" and "King
+        Khan," is one of the most iconic and successful actors in the world.
+        With a career spanning over three decades, he has starred in over 80
+        films, won numerous awards, and amassed a global fan following.
+      </p>
+      <p>
+        Khan is known for his versatility as an actor, having played a wide
+        range of roles from romantic heroes to action stars to villains. He is
+        also known for his charisma, wit, and charm.
+      </p>
+      <p>
+        Some of Shah Rukh Khan's most popular films include "Dilwale Dulhania Le
+        Jayenge," "Kuch Kuch Hota Hai," "Devdas," "Swades," "My Name is Khan,"
+        and "Chennai Express." He has also starred in several international
+        films, including "Ashoka the Great" and "The Namesake."
+      </p>
+      <p>
+        In addition to his acting career, Shah Rukh Khan is also a successful
+        businessman and philanthropist. He is the owner of the Indian Premier
+        League cricket team Kolkata Knight Riders and the production company Red
+        Chillies Entertainment. He is also the founder of the Meer Foundation, a
+        non-profit organization that provides education and healthcare to
+        underprivileged children.
+      </p>
+      <p>
+        Shah Rukh Khan is an inspiration to millions of people around the world.
+        He is a living example of the power of hard work, dedication, and
+        self-belief. He is also a role model for his humility, kindness, and
+        compassion.
+      </p>
+    </div>
+    <div class="font1">POPULAR MOVIES OF SRK.</div>
+    <div class="image-slider">
+      <img src="./images/pathaan.jpeg" alt="Pathaan" />
+      <img src="./images/jawaan.jpeg" alt="jawaan" />
+      <img src="./images/chak.jpeg" alt="chak" />
+      <img src="./images/ddlj.jpeg" alt="ddlj" />
+      <img src="./images/devdas.jpeg" alt="devdas" />
+      <img src="./images/dil.jpeg" alt="dil" />
+      <img src="./images/fan.jpeg" alt="fan" />
+      <img src="./images/mnk.jpeg" alt="mnk" />
+      <img src="./images/raees.jpeg" alt="raees" />
+      <img src="./images/raone.jpeg" alt="raone" />
+    </div>
+    <p>
+      ---------------------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+    <div>
+      <p class="font2">Coded by Ajay Asnani</p>
+    </div>
+
+    <script>
+      // JavaScript for automatic image slider
+      const images = document.querySelectorAll(".image-slider img");
+      let currentImage = 0;
+
+      function nextImage() {
+        images[currentImage].style.display = "none";
+        currentImage = (currentImage + 1) % images.length;
+        images[currentImage].style.display = "block";
+      }
+
+      // Set the interval for image sliding (e.g., every 3 seconds)
+      setInterval(nextImage, 3000);
+    </script>
+  </body>
+</html>

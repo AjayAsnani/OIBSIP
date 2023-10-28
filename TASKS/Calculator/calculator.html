@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" disabled />
+      <div class="line1">
+        <input type="button" value="(" onclick="addToDisplay('(')" />
+        <input type="button" value=")" onclick="addToDisplay(')')" />
+        <input type="button" value="ans" onclick="addToDisplay('ans')" />
+        <input type="button" value="del" onclick="deleteLastCharacter()" />
+        <input type="button" value="clear" onclick="clearDisplay()" />
+      </div>
+      <div class="line">
+        <input type="button" value="7" onclick="addToDisplay('7')" />
+        <input type="button" value="8" onclick="addToDisplay('8')" />
+        <input type="button" value="9" onclick="addToDisplay('9')" />
+        <input type="button" value="/" onclick="addToDisplay('/')" />
+        <input type="button" value="%" onclick="addToDisplay('%')" />
+      </div>
+      <div class="line">
+        <input type="button" value="4" onclick="addToDisplay('4')" />
+        <input type="button" value="5" onclick="addToDisplay('5')" />
+        <input type="button" value="6" onclick="addToDisplay('6')" />
+        <input type="button" value="*" onclick="addToDisplay('*')" />
+        <input type="button" value="√" onclick="sqrt()" />
+      </div>
+      <div class="line">
+        <input type="button" value="1" onclick="addToDisplay('1')" />
+        <input type="button" value="2" onclick="addToDisplay('2')" />
+        <input type="button" value="3" onclick="addToDisplay('3')" />
+        <input type="button" value="+" onclick="addToDisplay('+')" />
+        <input type="button" value="-" onclick="addToDisplay('-')" />
+      </div>
+      <div class="line1">
+        <input type="button" value="." onclick="addToDisplay('.')" />
+        <input type="button" value="0" onclick="addToDisplay('0')" />
+        <input type="button" value="=" onclick="calculate()" />
+        <input
+          type="button"
+          class="larger-button"
+          value="Enter"
+          onclick="evaluate()"
+        />
+      </div>
+    </div>
+
+    <script src="./Script.js"></script>
+  </body>
+</html>

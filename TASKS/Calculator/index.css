@@ -1,0 +1,76 @@
+body {
+  background-color: rgba(67, 129, 196, 0.9);
+}
+
+#calculator {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin-top: 7%;
+  border-radius: 20px;
+}
+input[type="text"] {
+  height: 70px;
+  width: 93%;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: rgba(121, 185, 252, 0.5);
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+.line1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="button"] {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  margin: 5px;
+  background-color: rgba(
+    121,
+    185,
+    252,
+    0.7
+  ); /* Light blue with reduced opacity */
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+/* Specify background color for 0-9 buttons individually */
+input[type="button"].larger-button,
+input[type="button"][value="0"],
+input[type="button"][value="1"],
+input[type="button"][value="2"],
+input[type="button"][value="3"],
+input[type="button"][value="4"],
+input[type="button"][value="5"],
+input[type="button"][value="6"],
+input[type="button"][value="7"],
+input[type="button"][value="8"],
+input[type="button"][value="9"] {
+  background-color: rgba(
+    121,
+    185,
+    252,
+    0.3
+  ); /* Light blue with reduced opacity for 0-9 buttons */
+}
+
+/* Update the "Enter" button's style */
+input[type="button"][value="Enter"] {
+  width: 200px;
+  background-color: rgba(67, 129, 196);
+  color: white;
+}

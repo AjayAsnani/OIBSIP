@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+}
+
+.font {
+  color: white;
+  font-size: xx-large;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.font1 {
+  color: white;
+  font-size: 3rem;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 5rem;
+}
+.font2 {
+  font-size: 20px;
+  margin-top: -0.3rem;
+  font-family:"Courier New", Courier, monospace;"
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+.para {
+  color: white;
+  padding-top: 10px;
+  width: 850px;
+}
+
+.para p {
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: larger;
+}
+.image-slider {
+  display: flex;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 700px;
+  height: 700px; /* Set the desired height */
+}
+
+.image-slider img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide all images except the first one */
+.image-slider img:not(:first-child) {
+  display: none;
+}
